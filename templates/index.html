@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>JOHN CENA</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+        <a href="/login">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <img src="https://image.tmdb.org/t/p/original/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg" alt="Profile">
+
+    <h2>Hello, I'm <span class="highlight">JOHN CENA</span></h2>
+
+    <p>Python Developer • Web Developer • Student</p>
+
+    <a href="/projects" class="btn">View My Projects</a>
+
+    <div class="social">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Akash S | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

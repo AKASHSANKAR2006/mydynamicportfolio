@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+padding:40px;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+color:#333;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+transition:.4s;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+}
+
+.card i{
+font-size:45px;
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.6;
+color:#666;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+.home{
+display:block;
+width:220px;
+margin:50px auto 0;
+text-align:center;
+padding:15px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+transition:.3s;
+}
+
+.home:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+body{
+padding:20px;
+}
+
+h1{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<h1><i class="fa-solid fa-laptop-code"></i> My Projects</h1>
+
+<div class="projects">
+
+<div class="card">
+
+<i class="fa-solid fa-globe"></i>
+
+<h2>Portfolio Website</h2>
+
+<p>
+Developed a responsive portfolio website using Flask,
+HTML, CSS and JavaScript with contact form and project showcase.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<h2>Student Management System</h2>
+
+<p>
+Designed a complete Student Management System using
+Python, Flask and MySQL with CRUD operations.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-robot"></i>
+
+<h2>AI Diabetes Prediction</h2>
+
+<p>
+Machine Learning application using Scikit-Learn that predicts
+whether a patient has diabetes based on health data.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h2>Sales Dashboard</h2>
+
+<p>
+Interactive dashboard with charts, analytics, responsive design
+and real-time statistics.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-comments"></i>
+
+<h2>Chat Application</h2>
+
+<p>
+Real-time chat application using Flask, Socket.IO and Bootstrap
+with user authentication.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-database"></i>
+
+<h2>Database Management</h2>
+
+<p>
+Database project using MySQL with secure login, search,
+update and report generation.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+<a href="/" class="home">
+<i class="fa-solid fa-house"></i> Back to Home
+</a>
+
+</body>
+</html>

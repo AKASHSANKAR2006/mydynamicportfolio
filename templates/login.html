@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#2193b0);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:90%;
+    max-width:400px;
+    padding:35px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.container h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:30px;
+}
+
+.inputBox{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.inputBox input{
+    width:100%;
+    padding:15px;
+    border:2px solid rgba(255,255,255,.4);
+    border-radius:12px;
+    background:transparent;
+    color:#fff;
+    outline:none;
+    font-size:16px;
+}
+
+.inputBox label{
+    position:absolute;
+    left:15px;
+    top:15px;
+    color:#fff;
+    pointer-events:none;
+    transition:.3s;
+}
+
+.inputBox input:focus,
+.inputBox input:valid{
+    border-color:#FFD700;
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label{
+    top:-10px;
+    left:12px;
+    background:#FFD700;
+    color:#000;
+    padding:2px 8px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#FFD700;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#fff;
+    transform:translateY(-3px);
+}</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Login</h2>
+
+    <form method="POST">
+
+        <div class="inputBox">
+            <input type="text" name="username" required>
+            <label>Username</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#2193b0);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+@keyframes bg{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+    transform:translateY(-3px);
+}
+
+/* Hero */
+
+.hero{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    animation:fade 1.2s;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#FFD700;
+}
+
+.hero p{
+    font-size:22px;
+    opacity:.9;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ffcc00;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(255,255,255,.4);
+}
+
+/* Social Icons */
+
+.social{
+    margin-top:35px;
+}
+
+.social a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:50px;
+    height:50px;
+    margin:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    color:white;
+    font-size:22px;
+    transition:.4s;
+}
+
+.social a:hover{
+    background:white;
+    color:#333;
+    transform:scale(1.2) rotate(10deg);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:18px;
+    background:rgba(255,255,255,.1);
+}
+
+/* Animation */
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
